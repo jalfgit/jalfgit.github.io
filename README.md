@@ -50,6 +50,15 @@ Download latest copy of the master branch
 git pull origin master
 ```
 
+### Reset Repo to Remote Branch
+Instructions when reset your local copy of the repo. The following will reset your local repo and match the server contents. 
+```HTML
+git fetch --all
+git reset --hard origin/master
+```
+
+
+
 ## Marking code sections
 
 The prettyprinter looks for `<pre>`, `<code>`, or `<xmp>` elements with the
