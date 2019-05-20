@@ -1,4 +1,5 @@
 # jalfgit.github.io Readme Page
+website: https://jalfgit.github.io/
 Most Used Commands
 
 # Git Helpful commands
@@ -48,6 +49,15 @@ git status
 Download latest copy of the master branch
 ```HTML
 git pull origin master
+git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
+git pull --all     #this will update all brancges.
+```
+
+### Listing Branches
+Instructions to list branches
+```HTML
+git fetch --all
+git reset --hard origin/master
 ```
 
 ### Reset Repo to Remote Branch
@@ -57,6 +67,8 @@ git fetch --all
 git reset --hard origin/master
 ```
 
+### Branch config file
+The config is under '''HTML <code>repodir/.git/config/</code>
 
 
 ## Marking code sections
