@@ -26,7 +26,7 @@ git push -u origin master
 If you already have a folder you would like to initialize with GIT
 ```HTML
 git init
-git remote add origin https://miami.bootcampcontent.com/jalfgit/my-first-project.git
+git remote add origin https://miami.bootcampcontent.com/GITUSERNAME/my-first-project.git
 git add .
 git commit -m "Initial commit"
 git push -u origin master
@@ -36,7 +36,7 @@ Existing Repo and renaming it
 ```HTML
 cd existing_repo
 git remote rename origin old-origin
-git remote add origin https://miami.bootcampcontent.com/jalfgit/my-first-project.git
+git remote add origin https://miami.bootcampcontent.com/GITUSERNAME/my-first-project.git
 git push -u origin --all
 git push -u origin --tags
 ```
@@ -69,6 +69,14 @@ git reset --hard origin/master
 
 ### Branch config file
 The config is under '''HTML <code>repodir/.git/config/</code>
+
+### Stashing modified code while you download the master branch code
+Instructions to list branches
+```HTML
+git stash           //this saves a copy of the code
+git pull            //pull the code without erasing what you modified.
+git stash pop       //this recovers the modified code
+```
 
 
 ## Marking code sections
