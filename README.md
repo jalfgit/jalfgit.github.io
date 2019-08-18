@@ -2,7 +2,7 @@
 website: https://jalfgit.github.io/
 Most Used Commands
 
-# Git Helpful commands
+## Git Helpful commands
 
 ### Global Setup
 Global Setup in Git in case you have not initiated Git
@@ -76,6 +76,7 @@ git checkout BRANCHNAME
 
 ### Reset Repo to Remote Branch
 Instructions when reset your local copy of the repo. The following will reset your local repo and match the server contents. 
+> make sure you will not need the current work
 ```HTML
 git fetch --all
 git reset --hard origin/master
@@ -103,3 +104,15 @@ source code here
 </pre>
 ```
 
+## Python Helpful Section
+Section to store code for python
+```python
+import PACKAGENAME
+print("Hello Class")
+```
+
+
+## Contributions
+This file has been created by Jorge Alfonso for the convenience of the class, and it is not intended to 
+replace any content provided by the school, affiliates, and educational sponsors.
+:octocat
