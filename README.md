@@ -53,11 +53,25 @@ git branch -r | grep -v '\->' | while read remote; do git branch --track "${remo
 git pull --all     #this will update all brancges.
 ```
 
-### Listing Branches
+### Working With Branches
 Instructions to list branches
-```HTML
-git fetch --all
-git reset --hard origin/master
+```bash
+git branch
+git branch -a
+```
+
+Create Branches
+```bash
+git branch BRANCHNAME
+```
+Delete Branches
+```bash
+git branch -d BRANCHNAME
+```
+
+Selecting Branches
+```bash
+git checkout BRANCHNAME
 ```
 
 ### Reset Repo to Remote Branch
@@ -67,18 +81,16 @@ git fetch --all
 git reset --hard origin/master
 ```
 
-### Branch config file
+### Git Branch Configuration *config* file
 The config is under '''HTML <code>repodir/.git/config/</code>
 
-### Stashing modified code while you download the master branch code
+### Stashing modified code to THEN download master branch code
 Instructions to list branches
 ```HTML
 git stash           //this saves a copy of the code
 git pull            //pull the code without erasing what you modified.
 git stash pop       //this recovers the modified code
 ```
-
-
 ## Marking code sections
 
 The prettyprinter looks for `<pre>`, `<code>`, or `<xmp>` elements with the
