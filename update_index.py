@@ -46,6 +46,16 @@ def create_index(filename:str,filecontent:str):
         file_handle.write(filecontent)
         return "hello"
 
+
+# output i am starting a index creator
+print(f"""
+Starting job to create an index.html file
+...
+"""
+
+)
+
+
 import pandas as pd
 import random as r
 
@@ -64,3 +74,10 @@ footer_content=readfile(web['footer'])
 web['content']=df.to_html(index=False,table_id='sales')
 index_content=header_content+web['content']+footer_content
 create_index('index.html',index_content)
+
+print(f"""
+Done!
+Great job
+"""
+
+)
